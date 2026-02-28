@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kapadokya Dostane Hotel | Resmi Web Sitesi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
+
+        nav {
+            background: #2c3e50;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 14px; }
+        .logo { font-size: 20px; color: #e67e22 !important; }
+
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .hero h1 { font-size: 50px; margin-bottom: 10px; }
+
+        .odalar-alani { padding: 50px 10%; text-align: center; }
+        .oda-listesi { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            margin-top: 40px; 
+        }
+
+        .oda-karti {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .oda-karti:hover { transform: translateY(-10px); }
+        .oda-resim { height: 200px; background: #ddd; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .oda-bilgi { padding: 20px; }
+        .oda-fiyat { color: #ffd900; font-size: 22px; font-weight: bold; margin: 10px 0; }
+        
+        .rez-btn {
+            display: block;
+            background: #27ae60;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">KAPADOKYA DOSTANE</a>
+        <div>
+            <a href="index.html">Anasayfa</a>
+            <a href="#">Aktiviteler</a> </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Gökyüzüne Dokunun</h1>
+        <p>Kapadokya'nın kalbinde unutulmaz bir deneyim sizi bekliyor.</p>
+    </header>
+
+    <section class="odalar-alani">
+        <h2>Konaklama Seçeneklerimiz</h2>
+        <div class="oda-listesi">
+            
+            <div class="oda-karti">
+                <div class="oda-resim">🛏️</div>
+                <div class="oda-bilgi">
+                    <h3>Standart Oda</h3>
+                    <p class="oda-fiyat">5.000 TL</p>
+                    <a href="rezervasyon.html" class="rez-btn">Seç ve Devam Et</a>
+                </div>
+            </div>
+
+            <div class="oda-karti">
+                <div class="oda-resim">✨</div>
+                <div class="oda-bilgi">
+                    <h3>Luxury Room</h3>
+                    <p class="oda-fiyat">7.000 TL</p>
+                    <a href="rezervasyon.html" class="rez-btn">Seç ve Devam Et</a>
+                </div>
+            </div>
+
+            <div class="oda-karti">
+                <div class="oda-resim">💎</div>
+                <div class="oda-bilgi">
+                    <h3>Deluxe Room</h3>
+                    <p class="oda-fiyat">10.000 TL</p>
+                    <a href="rezervasyon.html" class="rez-btn">Seç ve Devam Et</a>
+                </div>
+            </div>
+
+            <div class="oda-karti">
+                <div class="oda-resim">👨‍👩‍👧‍👦</div>
+                <div class="oda-bilgi">
+                    <h3>Aile Suiti</h3>
+                    <p class="oda-fiyat">10.000 TL</p>
+                    <a href="rezervasyon.html" class="rez-btn">Seç ve Devam Et</a>
+                </div>
+            </div>
+
+            <div class="oda-karti">
+                <div class="oda-resim">👑</div>
+                <div class="oda-bilgi">
+                    <h3>King Suit</h3>
+                    <p class="oda-fiyat">20.000 TL</p>
+                    <a href="rezervasyon.html" class="rez-btn">Seç ve Devam Et</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
